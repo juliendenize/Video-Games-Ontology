@@ -1,119 +1,119 @@
 ###########   Jeux vidéos   ###########
 
-DomainThing:
-  Industry:
-    Editors:
-    Employee:
-    Jobs: # pour savoir qui est le sound designer ex
-      Production:
-        Project Manager:
-        Graphics:
-          Infographist:
-          Animation:
-          Artist:
-        Sound:
-          Composer:
-          Sound Designer:
-        Developer:
-          Kernel:
-          Software:
-          Gameplay:
-          Motor:
-          AI:
-          Online:
-        Game designer:
-        Level designer:
-        Tester:
-        Translater:
-      Sales:
-      Marketing:
-      Event:
-        Esports:
-          Cast:
-        Host:
-    Distribution:
-      Digitally:
-      Physical:
+DomainThing
+  Industry
+    Editors
+    Employee
+    Jobs # pour savoir qui est le sound designer ex
+      Production
+        Project Manager
+        Graphics
+          Infographist
+          Animation
+          Artist
+        Sound
+          Composer
+          Sound Designer
+        Developer
+          Kernel
+          Software
+          Gameplay
+          Motor
+          AI
+          Online
+        Game designer
+        Level designer
+        Tester
+        Translater
+      Sales
+      Marketing
+      Event
+        Esports
+          Cast
+        Host
+    Distribution
+      Digitally
+      Physical
 
-  Player:
+  Player
 
-  Video Game:
-    Genre:
-      2D:
-      3D:
-      AAA:
-      Action:
-      Adventure:
-      Battle Royal:
-      Board Game:
-      Cooperation:
-      Compilation:
-      Cross:
-      Educational:
-      Fighting Game:
-      FPS:
-      Horror:
-      Independant:  
-      MMORPG:
-      MOBA:
-      Multiplayer:
-      Logic Game:
-      Party Game:
-      Platform:
-      Racing:
-      Rogue-Likes:
-      RPG:
-      Rythm Game:
-      Sandbox:
-      Simulation:
-      Shooter:
-        FPS:
-        TPS:
-      Shoot'em up:
-      Solo:
-      Sport:
-      Stealth Game:
-      Strategy:
-      Survival:
-      Tower Defense:
-      Wargames:
-      Zombie:
-    Cost:
-      Free:
-      Paid Game:
-      Subscribable:
-  Realease Date:
-  Event:
-    E-Sport:
-      Tournament:
+  Video Game
+    Genre
+      2D
+      3D
+      AAA
+      Action
+      Adventure
+      Battle Royal
+      Board Game
+      Cooperation
+      Compilation
+      Cross
+      Educational
+      Fighting Game
+      FPS
+      Horror
+      Independant  
+      MMORPG
+      MOBA
+      Multiplayer
+      Logic Game
+      Party Game
+      Platform
+      Racing
+      Rogue-Likes
+      RPG
+      Rythm Game
+      Sandbox
+      Simulation
+      Shooter
+        FPS
+        TPS
+      Shoot'em up
+      Solo
+      Sport
+      Stealth Game
+      Strategy
+      Survival
+      Tower Defense
+      Wargames
+      Zombie
+    Cost
+      Free
+      Paid Game
+      Subscribable
+  Realease Date
+  Event
+    E-Sport
+      Tournament
 
-    Faire:
-      Conference:
+    Faire
+      Conference
 
 
 
-  Plateform:
-    Arcade:
-    Consoles:
-      Handheld Game Console:
-    Mobile:
-    PC:
+  Plateform
+    Arcade
+    Consoles
+      Handheld Game Console
+    Mobile
+    PC
 
-ValuePartition:
-  CompanySize:
-    Large:
-    Medium:
-    Small:
-  Gender:
-    Male:
-    Female:
-    Other:
-  PEGI:
-    PEGI3:
-    PEGI7:
-    PEGI12:
-    PEGI16:
-    PEGI18:
+ValuePartition
+  CompanySize
+    Large
+    Medium
+    Small
+  Gender
+    Male
+    Female
+    Other
+  PEGI
+    PEGI3
+    PEGI7
+    PEGI12
+    PEGI16
+    PEGI18
     # jeux vidéo ont tous un pegi, certains genres peuvent avoir un pegi défini
 
 # jeux éducatifs
