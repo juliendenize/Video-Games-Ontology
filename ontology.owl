@@ -132,7 +132,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#isDevelopedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#isMadeBy"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#VideoGame"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Employee"/>
     </owl:ObjectProperty>
@@ -146,6 +146,14 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Employee"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#isFoundedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#isFoundedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -179,6 +187,77 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#VideoGame"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Human"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasEmployees -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasEmployees">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasSurname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasSurname">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#isFoundedIn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#isFoundedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#isRealeased -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#isRealeased">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Platform"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Human"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
     
 
 
@@ -252,9 +331,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Board -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Board">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Genre"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Actor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasProduced"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#VideoGame"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Actor"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Human"/>
     </owl:Class>
@@ -310,6 +409,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Educational -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Educational">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Genre"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Employee -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Employee">
@@ -319,11 +426,13 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Human"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasJob"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Job"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Job"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#isEmployedBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -421,7 +530,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasGender"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Gender"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Gender"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -439,6 +548,17 @@
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#LargeCompany -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#LargeCompany">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasEmployees"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1000</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
     </owl:Class>
     
@@ -463,6 +583,17 @@
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MediumCompany -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MediumCompany">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasEmployees"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
     </owl:Class>
     
@@ -580,6 +711,18 @@
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Player -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Player">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Human"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasPlayed"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#VideoGame"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Human"/>
     </owl:Class>
     
@@ -620,6 +763,17 @@
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#SmallCompany -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#SmallCompany">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasEmployees"/>
+                        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">100</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
     </owl:Class>
     
@@ -656,31 +810,31 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasGenre"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Genre"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Genre"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasPEGI"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PEGI"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PEGI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasPlatform"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Platform"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Platform"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#isMadeBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#isPlayedBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Player"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Player"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -698,9 +852,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#AI -->
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#AI_Developer -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#AI">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#AI_Developer">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Developer"/>
     </owl:NamedIndividual>
     
@@ -718,6 +872,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Activision">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#LargeCompany"/>
+        <hasEmployees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</hasEmployees>
+        <isFoundedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</isFoundedIn>
     </owl:NamedIndividual>
     
 
@@ -742,6 +898,18 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Ankama">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MediumCompany"/>
+        <isFoundedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Anthony_Roux"/>
+        <hasEmployees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</hasEmployees>
+        <isFoundedIn rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</isFoundedIn>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Anthony_Roux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Anthony_Roux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Employee"/>
+        <isEmployedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Ankama"/>
     </owl:NamedIndividual>
     
 
@@ -762,10 +930,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Blizzard -->
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Board -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Blizzard">
-        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#LargeCompany"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Board">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Board"/>
     </owl:NamedIndividual>
     
 
@@ -828,6 +996,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Educational -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Educational">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Educational"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#EpicGames -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#EpicGames">
@@ -877,6 +1053,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Fondateur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Fondateur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Manager"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Football -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Football">
@@ -885,17 +1069,17 @@
     
 
 
-    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Game_designer -->
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Game_Designer -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Game_designer">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Game_Designer">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#GameDesigner"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Gameplay -->
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Gameplay_Developer -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Gameplay">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Gameplay_Developer">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Developer"/>
     </owl:NamedIndividual>
     
@@ -969,9 +1153,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Leveldesiner -->
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Level_Designer -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Leveldesiner">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Level_Designer">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#GameDesigner"/>
     </owl:NamedIndividual>
     
@@ -988,14 +1172,6 @@
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MOBA -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MOBA">
-        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MOBA"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MOBA_Battle_Royale -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MOBA_Battle_Royale">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MOBA"/>
     </owl:NamedIndividual>
     
@@ -1068,9 +1244,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Online -->
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Online_Developer -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Online">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Online_Developer">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Developer"/>
     </owl:NamedIndividual>
     
@@ -1185,6 +1361,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Robert_Kotick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Robert_Kotick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Employee"/>
+        <isFoundedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Robert_Kotick"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Rocket_League -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Rocket_League">
@@ -1205,7 +1390,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Rogue-like">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Action"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Solo"/>
     </owl:NamedIndividual>
     
 
@@ -1218,15 +1402,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Shooter_Battle_Royale -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Shooter_Battle_Royale">
-        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#BattleRoyale"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Shooter"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Solo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Solo">
@@ -1235,9 +1410,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sound_designer -->
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sound_Designer -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sound_designer">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sound_Designer">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sound"/>
     </owl:NamedIndividual>
     
@@ -1353,6 +1528,24 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Action"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Adventure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#BattleRoyale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Dimension"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Esports"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Horror"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MOBA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Multiplayer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#RolePlay"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sandbox"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Shooter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Solo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sport"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Actor"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Gender"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Genre"/>
@@ -1379,6 +1572,16 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MobileVideoGame"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MultiPlatformVideoGame"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PCVideoGame"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Developer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#GameDesigner"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Graphics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Manager"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sound"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
