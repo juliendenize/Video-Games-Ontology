@@ -47,9 +47,11 @@ The closest ontology to what we did can be found at the following URL :
  
 https://bartoc.org/en/node/18344
 
-Besides, it mainly aims at encapsulating knowledge on events that happen in video gamees and information about players, whereas ours 
+Besides, it mainly aims at encapsulating knowledge on events that happen in video gamees and information about players, whereas ours is made in order to store general information, as well as in depth features including genre or production team of games in order to retrieve it from large market databases.
 
 ### B.3 Target audience
+
+The Video Game Ontology is used by video game digital ditribution service platforms such as Steam or Amazon to provide quality modeling in games representation so that consumers can provide the most acurate queries and get to the product they are looking for or discover interesting ones based on the various functional attributes available. 
 
 |  | Specification |
 |---|---|
@@ -62,6 +64,8 @@ Besides, it mainly aims at encapsulating knowledge on events that happen in vide
 
 ### C.1 Scope and coverage
 
+The ontology focuses 
+
 |  | Specification |
 |---|---|
 | **Description:** | The domain or field of interest for the ontology and the boundaries, granularity of representation and coverage of the ontology. State the requirements of the ontology, such as the competency questions it should satisfy. A visualisation or tabular representation is optional, but often helpful to illustrate the scope. |
@@ -71,6 +75,8 @@ Besides, it mainly aims at encapsulating knowledge on events that happen in vide
 
 ### C.2 Development community
 
+Alexandre DAZAT & Julien DENIZE
+
 |  | Specification |
 |---|---|
 | **Description:** | The person, group of people or organisation that actually creates the content of the ontology. This is distinct from the Ontology Owner (above) that is concerned with the management of the ontology's development. |
@@ -79,6 +85,8 @@ Besides, it mainly aims at encapsulating knowledge on events that happen in vide
 
 
 ### C.3 Communication
+
+URL
 
 |  | Specification |
 |---|---|
@@ -91,6 +99,8 @@ Besides, it mainly aims at encapsulating knowledge on events that happen in vide
 
 ### D.1 Knowledge acquisition methodology
 
+Personnal general knowledge acquired through 15+ years of gaming and structured into an ontology through the coursework 
+
 |  | Specification |
 |---|---|
 | **Description:** | How the knowledge in the ontology was gathered, sorted, verified, etc. |
@@ -99,6 +109,8 @@ Besides, it mainly aims at encapsulating knowledge on events that happen in vide
 
 
 ### D.2 Source knowledge location
+
+We collected data from various 
 
 |  | Specification |
 |---|---|
