@@ -255,6 +255,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A human has a name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasPlatformReleasedYear -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#hasPlatformReleasedYear">
@@ -366,7 +377,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#ArcadeGenre">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Genre"/>
-        <rdfs:comment xml:lang="en">The derived genres of arcade that is genres based on arcade machines or emulated arcade machines</rdfs:comment>
+        <rdfs:comment xml:lang="en">The derived genres of arcade that are genres based on arcade machines or emulated arcade machines</rdfs:comment>
         <rdfs:label xml:lang="en">ArcadeGenre</rdfs:label>
     </owl:Class>
     
@@ -393,7 +404,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Arcade"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">An arcade video game is a video game that can only be played on arcade devices</rdfs:comment>
+        <rdfs:comment xml:lang="en">An arcade video game is a video game that can be played on arcade devices</rdfs:comment>
         <rdfs:label xml:lang="en">ArcadeVideoGame</rdfs:label>
     </owl:Class>
     
@@ -487,7 +498,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Console"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A console video game is a video game that can only be played on consoles</rdfs:comment>
+        <rdfs:comment xml:lang="en">A console video game is a video game that can be played on consoles</rdfs:comment>
         <rdfs:label xml:lang="en">ConsoleVideoGame</rdfs:label>
     </owl:Class>
     
@@ -818,7 +829,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Mobile"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A mobile video game is a video game that can only be played on mobiles</rdfs:comment>
+        <rdfs:comment xml:lang="en">A mobile video game is a video game that can be played on mobiles</rdfs:comment>
         <rdfs:label xml:lang="en">MobileVideoGame</rdfs:label>
     </owl:Class>
     
@@ -856,6 +867,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Platform"/>
+        <rdfs:comment xml:lang="en">A PC is a computer that can launch video games</rdfs:comment>
+        <rdfs:label xml:lang="en">PC</rdfs:label>
     </owl:Class>
     
 
@@ -881,7 +894,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A PC video game is a video game that can only be played on PC</rdfs:comment>
+        <rdfs:comment xml:lang="en">A PC video game is a video game that can be played on PC</rdfs:comment>
         <rdfs:label xml:lang="en">PCVideoGame</rdfs:label>
     </owl:Class>
     
@@ -970,6 +983,14 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Job"/>
         <rdfs:comment xml:lang="en">The production jobs to create the video game</rdfs:comment>
         <rdfs:label xml:lang="en">ProductionJob</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Rogue-like -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Rogue-like">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Action"/>
     </owl:Class>
     
 
@@ -1063,6 +1084,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Genre"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#VideoGame -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#VideoGame">
@@ -1115,6 +1144,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#AIMotor_Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#AIMotor_Developer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MotorDeveloper"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#AI_Developer -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#AI_Developer">
@@ -1147,6 +1184,22 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Adventure">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Adventure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Age_Of_Wonders_III -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Age_Of_Wonders_III">
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Multiplayer"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Solo"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Strategy"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Linux"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Mac"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Windows"/>
+        <isDevelopedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Markus_Persson"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Triumph_Studios"/>
+        <hasGameReleasedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</hasGameReleasedYear>
     </owl:NamedIndividual>
     
 
@@ -1188,6 +1241,7 @@
         <hasGender rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Male"/>
         <hasJob rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Founder"/>
         <isEmployedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Ankama"/>
+        <hasName>Anthony_Roux</hasName>
     </owl:NamedIndividual>
     
 
@@ -1233,6 +1287,7 @@
         <hasJob rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Founder"/>
         <isEmployedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Microsoft"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">64</hasAge>
+        <hasName>Bill_Gates</hasName>
     </owl:NamedIndividual>
     
 
@@ -1271,7 +1326,7 @@
         <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#FPS"/>
         <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#3D"/>
         <hasPEGI rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PEGI18"/>
-        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Windows"/>
         <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Xbox_One"/>
         <isPlayedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Corentin_Houssein"/>
         <isProducedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Activision"/>
@@ -1311,6 +1366,7 @@
         <hasGender rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Male"/>
         <hasPlayed rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Call_of_Duty"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">26</hasAge>
+        <hasName>Corentin_Houssein</hasName>
         <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gotaga</hasSurname>
     </owl:NamedIndividual>
     
@@ -1339,8 +1395,8 @@
         <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Adventure"/>
         <hasPEGI rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PEGI7"/>
         <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Nintendo_Switch"/>
-        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC"/>
         <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PS4"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Windows"/>
         <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Xbox_One"/>
         <isProducedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Motion-Twin"/>
         <hasGameReleasedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2018</hasGameReleasedYear>
@@ -1356,7 +1412,7 @@
         <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Multiplayer"/>
         <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#2D"/>
         <hasPEGI rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PEGI12"/>
-        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Windows"/>
         <isProducedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Ankama"/>
         <hasGameReleasedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</hasGameReleasedYear>
     </owl:NamedIndividual>
@@ -1424,6 +1480,27 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Fornite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Fornite">
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Battle_Royal"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Esports"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#TPS"/>
+        <hasPEGI rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PEGI12"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Android"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#IOS"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Mac"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Nintendo_Switch"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PS4"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Windows"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Xbox_One"/>
+        <isPlayedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Corentin_Houssein"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#EpicGames"/>
+        <hasGameReleasedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</hasGameReleasedYear>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Founder -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Founder">
@@ -1461,6 +1538,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Graphics_Motor_Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Graphics_Motor_Developer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MotorDeveloper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Growtopia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Growtopia">
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Adventure"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#MMORPG"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sandbox"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Android"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#IOS"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Mac"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PS4"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Windows"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Xbox_One"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Ubisoft"/>
+        <hasGameReleasedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</hasGameReleasedYear>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Halo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Halo">
@@ -1491,10 +1594,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#IOS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#IOS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Mobile"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Infographist -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Infographist">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Infographist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Junior_AI_Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Junior_AI_Developer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#AIDeveloper"/>
     </owl:NamedIndividual>
     
 
@@ -1537,6 +1656,7 @@
         <hasGender rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Male"/>
         <hasPlayed rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#League_of_Legends"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">23</hasAge>
+        <hasName>Lee_Sang-Hyeok</hasName>
         <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faker</hasSurname>
     </owl:NamedIndividual>
     
@@ -1597,6 +1717,7 @@
         <hasFounded rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Riot_Games"/>
         <hasGender rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Male"/>
         <hasJob rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Founder"/>
+        <hasName>Marc_Merrill</hasName>
     </owl:NamedIndividual>
     
 
@@ -1610,7 +1731,9 @@
         <hasGender rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Male"/>
         <hasJob rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Game_Designer"/>
         <hasJob rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Gameplay_Developer"/>
+        <hasPlayed rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Minecraft"/>
         <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">40</hasAge>
+        <hasName>Markus_Persson</hasName>
         <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Notch</hasSurname>
     </owl:NamedIndividual>
     
@@ -1638,6 +1761,7 @@
         <hasGender rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Male"/>
         <hasJob rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sound_Designer"/>
         <isEmployedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#EpicGames"/>
+        <hasName>Mike_Ault</hasName>
     </owl:NamedIndividual>
     
 
@@ -1652,8 +1776,8 @@
         <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sandbox"/>
         <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Solo"/>
         <hasPEGI rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PEGI7"/>
-        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC"/>
         <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PS4"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Windows"/>
         <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Xbox_One"/>
         <isDevelopedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Markus_Persson"/>
         <isProducedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Microsoft"/>
@@ -1689,6 +1813,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Network_Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Network_Developer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#OnlineDeveloper"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#NintendoDS -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#NintendoDS">
@@ -1720,14 +1852,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Other">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Gender"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC">
-        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC"/>
     </owl:NamedIndividual>
     
 
@@ -1824,6 +1948,7 @@
         <hasFounded rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Activision"/>
         <hasGender rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Male"/>
         <hasJob rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Founder"/>
+        <hasName>Robert_Kotick</hasName>
     </owl:NamedIndividual>
     
 
@@ -1840,8 +1965,8 @@
         <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Linux"/>
         <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Mac"/>
         <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Nintendo_Switch"/>
-        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC"/>
         <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PS4"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Windows"/>
         <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Xbox_One"/>
         <isDevelopedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Mike_Ault"/>
         <isProducedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#EpicGames"/>
@@ -1852,7 +1977,7 @@
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Rogue-like -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Rogue-like">
-        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Action"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Rogue-like"/>
     </owl:NamedIndividual>
     
 
@@ -1861,6 +1986,22 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sandbox">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sandbox"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Senior_AI_Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Senior_AI_Developer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#AIDeveloper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Senior_Infographist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Senior_Infographist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Infographist"/>
     </owl:NamedIndividual>
     
 
@@ -1911,6 +2052,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Strategy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Strategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Strategy"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#TPS -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#TPS">
@@ -1926,6 +2075,25 @@
         <hasFounded rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#EpicGames"/>
         <hasGender rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Male"/>
         <hasJob rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Founder"/>
+        <hasName>Tim_Sweeney</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Triumph_Studios -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Triumph_Studios">
+        <hasEmployees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasEmployees>
+        <isFoundedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</isFoundedInYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Ubisoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Ubisoft">
+        <hasEmployees rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000</hasEmployees>
+        <isFoundedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1986</isFoundedInYear>
     </owl:NamedIndividual>
     
 
@@ -1937,6 +2105,29 @@
         <hasProduced rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Counter_Strike_Source"/>
         <hasEmployees rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">360</hasEmployees>
         <isFoundedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1996</isFoundedInYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Warcraft_III -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Warcraft_III">
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Multiplayer"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Solo"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#2D"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Mac"/>
+        <hasPlatform rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Windows"/>
+        <isPlayedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Lee_Sang-Hyeok"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Activision"/>
+        <hasGameReleasedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</hasGameReleasedYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Windows -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Windows">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC"/>
     </owl:NamedIndividual>
     
 
@@ -1954,14 +2145,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Zombie">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Zombie"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#iPhone -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#iPhone">
-        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Mobile"/>
     </owl:NamedIndividual>
     
 
@@ -1986,6 +2169,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#4D">
         <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Dimension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Gameplay_Developer_C++ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Gameplay_Developer_C++">
+        <rdf:type rdf:resource="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#GameplayDeveloper"/>
     </owl:NamedIndividual>
     
 
@@ -2022,6 +2213,10 @@
         <rdfs:label xml:lang="en">Board</rdfs:label>
         <rdfs:comment xml:lang="en">The derived genres of board such as chess, checkers, ...</rdfs:comment>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Cooperation">
+        <rdfs:comment xml:lang="en">Cooperation focuses on two or more players working together to accomplish an objective</rdfs:comment>
+        <rdfs:label xml:lang="en">Cooperation</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Educational">
         <rdfs:comment xml:lang="en">The Education genre that is mostly used to educate children but also, sometimes adults</rdfs:comment>
         <rdfs:label xml:lang="en">Educational</rdfs:label>
@@ -2046,9 +2241,9 @@
         <rdfs:label xml:lang="en">Multiplayer</rdfs:label>
         <rdfs:comment xml:lang="en">The Multiplayer genres focuses on allowing players to play together or against each other</rdfs:comment>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#PC">
-        <rdfs:label xml:lang="en">PC</rdfs:label>
-        <rdfs:comment xml:lang="en">A PC is a computer that can launch video games</rdfs:comment>
+    <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Rogue-like">
+        <rdfs:comment xml:lang="en">Rogue likes are Action games focused on high difficulties</rdfs:comment>
+        <rdfs:label xml:lang="en">Rogue_Like</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sandbox">
         <rdfs:comment xml:lang="en">The derivatives genre of Sanbox in which players are allowed to destroy and construct anything by interacting with the environment</rdfs:comment>
@@ -2057,6 +2252,10 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Solo">
         <rdfs:label xml:lang="en">Solo</rdfs:label>
         <rdfs:comment xml:lang="en">The Solo genres focuses on playing alone</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Strategy">
+        <rdfs:label xml:lang="en">Strategy</rdfs:label>
+        <rdfs:comment xml:lang="en">The strategy genre focus on making strategy based on successfully manage ressources to eliminate ennemies</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Zombie">
         <rdfs:label xml:lang="en">Zombie</rdfs:label>
@@ -2100,6 +2299,7 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Shooter"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Solo"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Sport"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/julien/ontologies/2019/9/untitled-ontology-7#Strategy"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
